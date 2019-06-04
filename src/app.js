@@ -41,6 +41,8 @@ app.get('/help', (req, res) => {
     })
 })
 
+console.log("Hello World");
+
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
         return res.send({
